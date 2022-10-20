@@ -11,21 +11,28 @@
 
 Файлы:
 
-в папке tests: test_rostelecom.py - все автотесты
+в папке tests: 
+
+               test_rostelecom.py - все автотесты
+
                driver.exe - Chromedriver
 
-в папке Pages: base.py - содержит библиотеку Smart Page Object
+в папке Pages: 
 
-auth_page.py - содержит класс для страницы "Авторизация"
+               base.py - содержит библиотеку Smart Page Object
 
-auth_page_with_code.py - содержит класс для страницы "Авторизация с временным кодом"
+               auth_page.py - содержит класс для страницы "Авторизация"
 
-elements.py - содержит класс для определения элементов на веб-страницах
+               auth_page_with_code.py - содержит класс для страницы "Авторизация с временным кодом"
 
-register_page.py - содержит класс для страницы "Регистрация"
+               elements.py - содержит класс для определения элементов на веб-страницах
+
+               register_page.py - содержит класс для страницы "Регистрация"
 
 Запуск тестов:
 
  py -m pytest -v --driver Chrome --driver-path driver.exe 
+ 
  или
+ 
  python -m pytest -v --driver Chrome --driver-path driver.exe
